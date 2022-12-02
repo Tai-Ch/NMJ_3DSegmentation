@@ -6,4 +6,4 @@ Test
 # 3D Hysteresis Segmentation
 Test
 # Mask smFISH signal 
-![Masking smFISH signal by HRP](relative/path/to/img.pdf?raw=true "Title")
+![Masking 3D smFISH signal by 3D HRP Mask](3D Segmentation Example.pdf)
