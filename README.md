@@ -7,10 +7,15 @@ This is the recommended organisation of the folders for the workflow.
 ## 1. Prepare .tif files
 
 If your data files are not .tif, start here. Put all images in a "raw file" folder.
+
 > In Fiji, go to Process -> Batch -> Convert...
+
 > Choose Input... ("raw file" folder)
+
 > Choose Output... ("tif" folder)
+
 > Output format TIFF, Interpolation = "None", Scale factor 1.00 
+
 Check results
 
 ## 2.1 Subtract background
@@ -37,7 +42,7 @@ function action (input, output, filename) {
 ```
 Check results
 
-# 2.2 Create 3D Mask
+## 2.2 Create 3D Mask
 
 Open the following code in Fiji Macros (download this file ![here](https://github.com/Tai-Ch/NMJ_3DSegmentation/blob/5e617f2de7e499079939abc6f35e3e88724cd55d/3D_Hys_Seg.ijm))
 > Change the input and output directory
