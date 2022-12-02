@@ -9,18 +9,15 @@ This is the recommended organisation of the folders for the workflow.
 If your data files are not .tif, start here. Put all images in a "raw file" folder.
 
 > In Fiji, go to Process -> Batch -> Convert...
-
 > Choose Input... ("raw file" folder)
-
 > Choose Output... ("tif" folder)
-
 > Output format TIFF, Interpolation = "None", Scale factor 1.00 
 
 Check results
 
 ## 2.1 Subtract background
 
-Open the following code in Fiji Macros (download this file ![here](https://github.com/Tai-Ch/NMJ_3DSegmentation/blob/5e617f2de7e499079939abc6f35e3e88724cd55d/smFISH_background_subtract.ijm))
+Open the following code in Fiji Macros (download this file <a href="https://github.com/Tai-Ch/NMJ_3DSegmentation/blob/5e617f2de7e499079939abc6f35e3e88724cd55d/smFISH_background_subtract.ijm"> Here </a>
 > Change the input and output directory
 > Check whether your smFISH channel is channel 0, 1, 2, or 3. Mine was channel 2. 
 
