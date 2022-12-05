@@ -48,7 +48,7 @@ Check results
 
 ## 2.2 Create 3D Mask from HRP signal (Neurons) or other fluorescent markers
 
-Open the following code in Fiji Macros (download this file <a href="https://github.com/Tai-Ch/NMJ_3DSegmentation/blob/5e617f2de7e499079939abc6f35e3e88724cd55d/3D_Hys_Seg.ijm"> Here </a>)
+Open the following code in Fiji Macros (download file <a href="https://github.com/Tai-Ch/NMJ_3DSegmentation/blob/5e617f2de7e499079939abc6f35e3e88724cd55d/3D_Hys_Seg.ijm"> Here </a>)
 
 > Change the input and output directory
 > 
@@ -87,7 +87,9 @@ In the case where you have HRP signal (or other fluorescent markers) outside of 
 > Open each 3D Mask image output and evaluate whether the mask represents the actual structure. Repeat Step 2.2 with different high and low values for 3D Hysteresis Thresholding if necessary. If the segmentation goes well but the images include unwated structures around the corner or near the NMJ, do the following:
 > 
 > Select Freehand selection tool and draw around the NMJ.
+> 
 > Edit -> Selection -> Make Inverse.
+> 
 > Press 'delete' frame by frame.
 
 Check results
@@ -98,9 +100,10 @@ Open two images at a time: (1) the 3D mask channel and (2) the smFISH channel.
 
 > Process -> Image Calculator
 >
-> Select Image 1 and Image 2 (in any order), choose operation as 'multiply'. Select 'Create new window'. Do not select '32-bit (float) result'.
+> Select Image 1 and Image 2 (in any order), choose operation as 'multiply'. 
+> Select 'Create new window'. Do not select '32-bit (float) result'.
 >
-> Save images. These images are input for bigfish analysis. 
+> Save images. These images are input for smFISH analysis. 
 
 ![Masking 3D smFISH signal by 3D HRP Mask](https://github.com/Tai-Ch/NMJ_3DSegmentation/blob/d5497390f89dd77b180d919aad4fb164a72256d5/3D%20Segmentation%20Example.png?raw=true)
 
